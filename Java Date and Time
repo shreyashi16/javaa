@@ -1,0 +1,12 @@
+class Result {
+
+
+    public static String findDay(int month, int day, int year) {
+
+Calendar cal = new GregorianCalendar(year, month - 1, day); 
+    String[] dayNames = {"SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"};
+    return dayNames[cal.get(Calendar.DAY_OF_WEEK) - 1]; 
+
+    }
+
+}
