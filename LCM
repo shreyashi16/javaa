@@ -1,0 +1,21 @@
+class LCM {
+    public static void main(String[] args) {
+
+        int a = 12;
+        int b = 18;
+
+        int x = a, y = b;
+
+        // HCF logic
+        while (y != 0) {
+            int temp = y;
+            y = x % y;
+            x = temp;
+        }
+
+        int hcf = x;
+        int lcm = (a * b) / hcf;
+
+        System.out.println("LCM = " + lcm);
+    }
+}
