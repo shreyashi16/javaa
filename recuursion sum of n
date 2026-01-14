@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Solution {
+    static int sumOfN(int n) {
+        // Base case
+        if (n == 0) {
+            return 0;
+        }
+        // Recursive case
+        return n + sumOfN(n - 1);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int result = sumOfN(n);
+        System.out.println(result);
+    }
+}
