@@ -1,0 +1,16 @@
+
+class Utility {
+
+    private Utility() {
+        System.out.println("Private constructor called");
+    }
+
+    static void showMessage() {
+        System.out.println("Static method accessed");
+    }
+
+    public static void main(String[] args) {
+        // Utility u = new Utility();  // ❌ Not allowed
+        Utility.showMessage();         // ✅ Allowed
+    }
+}
