@@ -1,0 +1,30 @@
+
+class Book {
+
+    String title;
+    int pages;
+
+    // Parameterized constructor
+    Book(String title, int pages) {
+        this.title = title;
+        this.pages = pages;
+    }
+
+    // Copy constructor
+    Book(Book b) {
+        this.title = b.title;
+        this.pages = b.pages;
+    }
+
+    void display() {
+        System.out.println("Title: " + title);
+        System.out.println("Pages: " + pages);
+    }
+
+    public static void main(String[] args) {
+        Book b1 = new Book("Java Basics", 300);
+        Book b2 = new Book(b1);
+
+        b2.display();
+    }
+}
