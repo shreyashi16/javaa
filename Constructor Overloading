@@ -1,0 +1,29 @@
+
+class Box {
+
+    double length, width, height;
+
+    // No-argument constructor
+    Box() {
+        length = width = height = 1;
+    }
+
+    // Parameterized constructor
+    Box(double l, double w, double h) {
+        length = l;
+        width = w;
+        height = h;
+    }
+
+    void volume() {
+        System.out.println("Volume = " + (length * width * height));
+    }
+
+    public static void main(String[] args) {
+        Box b1 = new Box();
+        b1.volume();
+
+        Box b2 = new Box(5, 4, 3);
+        b2.volume();
+    }
+}
