@@ -1,0 +1,20 @@
+Method Overriding
+class Person {
+
+    void display() {
+        System.out.println("This is Person class");
+    }
+}
+
+class Student extends Person {
+
+    // overriding parent method
+    void display() {
+        System.out.println("This is Student class");
+    }
+
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.display();
+    }
+}
