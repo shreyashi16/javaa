@@ -1,0 +1,16 @@
+class Display {
+
+    void show(int x) {
+        System.out.println("Integer: " + x);
+    }
+
+    void show(String s) {
+        System.out.println("String: " + s);
+    }
+
+    public static void main(String[] args) {
+        Display d = new Display();
+        d.show(5);
+        d.show("Java");
+    }
+}
