@@ -1,0 +1,18 @@
+class Person {
+
+    void role() {
+        System.out.println("Person role");
+    }
+}
+
+class Student extends Person {
+
+    void role() {
+        System.out.println("Student role");
+    }
+
+    public static void main(String[] args) {
+        Person p = new Student();
+        p.role();
+    }
+}
