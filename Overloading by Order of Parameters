@@ -1,0 +1,16 @@
+class Test {
+
+    void print(int a, String b) {
+        System.out.println(a + " " + b);
+    }
+
+    void print(String b, int a) {
+        System.out.println(b + " " + a);
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.print(10, "Hello");
+        t.print("Hi", 20);
+    }
+}
