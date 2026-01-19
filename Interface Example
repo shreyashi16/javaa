@@ -1,0 +1,15 @@
+interface Playable {
+    void play();   // abstract method
+}
+
+class Child implements Playable {
+
+    public void play() {
+        System.out.println("Child plays");
+    }
+
+    public static void main(String[] args) {
+        Child c = new Child();
+        c.play();
+    }
+}
