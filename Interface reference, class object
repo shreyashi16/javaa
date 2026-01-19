@@ -1,0 +1,17 @@
+
+interface Bank {
+    int getRateOfInterest();
+}
+
+class SBI implements Bank {
+    public int getRateOfInterest() {
+        return 7;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Bank b = new SBI();
+        System.out.println(b.getRateOfInterest());
+    }
+}
