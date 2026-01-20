@@ -1,0 +1,19 @@
+
+class Car {
+    private String brand;
+
+    public Car(String b) {
+        brand = b;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car c = new Car("Toyota");
+        System.out.println(c.getBrand());
+    }
+}
