@@ -1,0 +1,35 @@
+class Student {
+    // private data members
+    private int rollNo;
+    private String name;
+
+    // setter methods
+    public void setRollNo(int r) {
+        rollNo = r;
+    }
+
+    public void setName(String n) {
+        name = n;
+    }
+
+    // getter methods
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student();
+
+        s.setRollNo(101);
+        s.setName("Ali");
+
+        System.out.println(s.getRollNo());
+        System.out.println(s.getName());
+    }
+}
