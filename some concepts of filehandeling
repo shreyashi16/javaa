@@ -1,0 +1,58 @@
+Important File Functions
+File f = new File("demo.txt");
+
+f.exists();        // true / false
+f.getName();       // file name
+f.getAbsolutePath();
+f.length();        // size in bytes
+f.canRead();
+f.canWrite();
+
+File class ke constructors
+Constructor 1
+File f = new File("demo.txt");
+File ka naam/path deta hai
+Sirf file ka reference banata hai, file create nahi karta
+
+Constructor 2
+File f = new File("C:\\data\\demo.txt");
+Absolute path wala constructor
+
+Constructor 3
+File f = new File("C:\\data", "demo.txt");
+ Folder + file name alag-alag diya
+
+fileReader constructors
+Constructor 1 (MOST USED)
+FileReader fr = new FileReader("demo.txt");
+java bolegi:
+File open karo
+Read mode me rakho
+Agar file nahi mili → IOException 
+
+Constructor 2
+File f = new File("demo.txt");
+FileReader fr = new FileReader(f);
+Pehle file object
+Phir us file ko read karna
+
+fileWriter constructors
+Constructor 1 (overwrite mode)
+FileWriter fw = new FileWriter("demo.txt");
+Purana data UD JAYEGA 
+
+ Constructor 2 (append mode)
+FileWriter fw = new FileWriter("demo.txt", true);
+Purana data safe 
+Naya data end me add
+
+Constructor 3
+File f = new File("demo.txt");
+FileWriter fw = new FileWriter(f);
+
+BufferedReader constructor
+Isme direct file name allowed nahi 
+BufferedReader br = new BufferedReader(new FileReader("demo.txt"));
+ Kyun?
+BufferedReader ko Reader object chahiye
+FileReader ek Reader hai
